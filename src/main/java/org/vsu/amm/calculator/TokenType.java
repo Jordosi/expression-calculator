@@ -1,5 +1,33 @@
 package org.vsu.amm.calculator;
 
+/**
+ * Перечисление, представляющее типы токенов, которые могут встречаться в математическом выражении.
+ * <p>
+ * Используется для классификации токенов при лексическом анализе выражения.
+ * </p>
+ *
+ * @author Jordosi
+ * @version 1.0
+ */
 public enum TokenType {
-    NUMBER, VARIABLE, FUNCTION, OPERATOR, LEFT_PARENTHESIS, RIGHT_PARENTHESIS, EOF
+    /** Числовой литерал (например, 42 или 3.14) */
+    NUMBER,
+
+    /** Имя переменной (например, x или result*/
+    VARIABLE,
+
+    /** Имя функции (например, sin или cos) */
+    FUNCTION,
+
+    /** Математический оператор (+, -, *, /) */
+    OPERATOR,
+
+    /** Левая круглая скобка '(' */
+    LEFT_PARENTHESIS,
+
+    /** Правая круглая скобка ')' */
+    RIGHT_PARENTHESIS,
+
+    /** Специальный маркер конца выражения */
+    EOF
 }
