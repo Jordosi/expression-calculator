@@ -13,7 +13,6 @@ import java.util.List;
  *   <li>Переменные (значения запрашиваются через VariableContext)</li>
  *   <li>Тригонометрические функции: sin, cos, tan (аргумент в градусах)</li>
  * </ul>
- * </p>
  *
  * @author Jordosi
  * @version 1.0
