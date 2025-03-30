@@ -61,9 +61,11 @@ public class ExpressionParser {
             }
             else if (ch == '('){
                 tokens.add(new Token(TokenType.LEFT_PARENTHESIS, "("));
+                pos++;
             }
             else if (ch == ')'){
                 tokens.add(new Token(TokenType.RIGHT_PARENTHESIS, ")"));
+                pos++;
             }
             else {
                 throw new RuntimeException("Unexpected character: " + ch);
