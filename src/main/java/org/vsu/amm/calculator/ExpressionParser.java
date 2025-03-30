@@ -25,6 +25,9 @@ public class ExpressionParser {
      * @throws IllegalArgumentException если входная строка равна null
      */
     public ExpressionParser(String input){
+        if (input == null){
+            throw new IllegalArgumentException("Input string cannot be null");
+        }
         this.input = input;
     }
 

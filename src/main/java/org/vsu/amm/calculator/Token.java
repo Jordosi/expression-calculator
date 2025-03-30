@@ -25,6 +25,9 @@ public class Token {
      * @throws IllegalArgumentException если значение равно null
      */
     public Token(TokenType type, String value){
+        if (value == null){
+            throw new IllegalArgumentException("Value cannot be null");
+        }
         this.type = type;
         this.value = value;
     }

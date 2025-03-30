@@ -33,6 +33,10 @@ public class VariableContext {
      * @throws NumberFormatException если пользователь вводит некорректное числовое значение
      */
     public double getVariableValue(String name){
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Variable name cannot be null or empty");
+        }
+
         if(!variables.containsKey(name)){
             System.out.print("Enter value for variable " + name + ": ");
             double value = scanner.nextDouble();
