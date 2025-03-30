@@ -30,7 +30,7 @@ git clone https://github.com/Jordosi/expression-calculator.git
     
 
 ```bash
-cd math-expression-calculator
+cd expression-calculator
 ```
 
 ## Использование
